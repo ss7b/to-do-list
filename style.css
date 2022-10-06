@@ -44,7 +44,18 @@ h1 {
   margin-right: 10px;
   cursor: pointer;
 }
-
+@media (max-width: 767px) {
+  .form{
+    padding: 10px;
+  }
+  .input{
+    flex-basis: 65%;
+    width: 100%;
+  }
+  .add{
+    flex-basis: 30%;
+  }
+}
 .tasks {
   background-color: #eee;
   margin-top: 20px;
