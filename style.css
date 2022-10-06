@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 500px;
+  margin: 20px auto 0;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+h1 {
+  text-align: center;
+  color: #00bcd4;
+  padding: 6px;
+  margin: 7px;
+  border-bottom: 1px solid #ddd;
+}
+.form {
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  flex: 1;
+  font-size: 18px;
+}
+.input:focus {
+  outline: none;
+}
+.add {
+  border: none;
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.tasks {
+  background-color: #eee;
+  margin-top: 20px;
+  border-radius: 6px;
+  padding: 20px;
+}
+.tasks .task {
+  background-color: white;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  font-size: 20px;
+}
+.tasks .task:not(:last-child) {
+  margin-bottom: 15px;
+}
+.tasks .task:hover {
+  background-color: #f7f7f7;
+}
+.tasks .task.done {
+  opacity: 0.3;
+  text-decoration: line-through;
+}
+.tasks .task span {
+  font-weight: bold;
+  font-size: 12px;
+  background-color: transparent;
+  color: red;
+  border: 2px solid red;
+  padding: 4px 6px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.del-all {
+  background: red;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 8px;
+  border-radius: 5px;
+  margin-top: 39px;
+  cursor: pointer;
+}
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 20px;
+  border-top: 1.5px solid #c0c0c0;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.complet-tsk span,
+.tsk-counter span {
+  padding: 2px 3px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.complet-tsk span{
+  background: #00bcd4;
+}
+.tsk-counter span {
+  background: #e91e63;
+}
