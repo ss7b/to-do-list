@@ -38,6 +38,7 @@ h1 {
 .add {
   border: none;
   background-color: #00bcd4;
+  height: 100%;
   color: white;
   padding: 10px;
   border-radius: 6px;
@@ -59,7 +60,8 @@ h1 {
 .tasks {
   background-color: #eee;
   margin-top: 20px;
-  border-radius: 6px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
   padding: 20px;
 }
 .tasks .task {

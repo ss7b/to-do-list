@@ -27,9 +27,10 @@ taskDiv.addEventListener("click",(e)=>{
     if(e.target.classList.contains("del")){
         delAlleTaskWidth(e.target.parentElement.getAttribute("data-id"));
         e.target.parentElement.remove();
-        if (arrayOfTasks == '') {
+        if (document.querySelectorAll(".task").length == 1) {
             document.querySelector(".del-all").remove();
          }
+         counter()
          com()
     }
     if(e.target.classList.contains("task")){
@@ -102,13 +103,12 @@ function delAll(){
  }
 
 function counter(){
-    if (arrayOfTasks != '') {
+    if (document.querySelectorAll(".task").length >= 1) {
     document.querySelector(".tsk-counter span").innerHTML = arrayOfTasks.length;
     }else{
     document.querySelector(".tsk-counter span").innerHTML = "0";
     }
 }
-com()
 function com(){
     document.querySelector(".complet-tsk span").innerHTML = document.querySelectorAll(".done").length;
     if(document.querySelectorAll(".done").length === 0){
